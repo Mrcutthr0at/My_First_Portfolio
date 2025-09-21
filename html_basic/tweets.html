@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tweets Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f5f8fa;
+            color: #14171a;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #1da1f2;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #1da1f2;
+            margin-bottom: 10px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .tweet-container {
+            margin: 25px 0;
+            border: 1px solid #e6ecf0;
+            border-radius: 12px;
+            padding: 15px;
+            background-color: #f9fbfd;
+        }
+        .navigation {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #1da1f2;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #1a91da;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #657786;
+            font-size: 0.9rem;
+            border-top: 1px solid #e6ecf0;
+        }
+        .twitter-logo {
+            color: #1da1f2;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .instructions {
+            background-color: #e8f5fe;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Social Media Page</h1>
+        <p>Welcome to my tweets showcase</p>
+    </header>
+
+    <div class="container">
+        <h2>Latest Tweet</h2>
+        <p>Here's my most recent tweet embedded directly in this webpage:</p>
+        
+        <div class="tweet-container">
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">The most powerful thing you own is your voice. Use it for good, use it for change, use it to empower others.</p>
+                &mdash; Twitter (@Twitter) <a href="https://twitter.com/Twitter/status/20">July 26, 2022</a>
+            </blockquote> 
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        
+        <div class="instructions">
+            <p><strong>Note:</strong> This is a simulated tweet embed. In a real implementation, you would use the actual embed code from Twitter.</p>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <a href="index.html" class="btn">← Back to Homepage</a>
+    </div>
+
+    <footer>
+        <p>Created with ❤️ using HTML and CSS</p>
+        <p>Follow me on <span class="twitter-logo">Twitter</span></p>
+    </footer>
+</body>
+</html>
