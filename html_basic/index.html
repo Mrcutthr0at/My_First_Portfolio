@@ -95,6 +95,10 @@
             border-bottom: 2px solid #e6ecf0;
             padding-bottom: 0.5rem;
         }
+        h3 {
+            color: #1a91da;
+            margin: 2rem 0 1rem;
+        }
         p {
             margin-bottom: 1rem;
         }
@@ -128,6 +132,39 @@
         .btn:hover {
             background-color: #1a91da;
         }
+        
+        /* Table Styles */
+        .table-container {
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        thead {
+            background-color: #1da1f2;
+            color: white;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e6ecf0;
+        }
+        th {
+            font-weight: 600;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9fbfd;
+        }
+        tbody tr:hover {
+            background-color: #e8f5fe;
+        }
+        
         @media (max-width: 768px) {
             main {
                 flex-direction: column;
@@ -138,6 +175,9 @@
             }
             nav li {
                 margin: 5px 0;
+            }
+            th, td {
+                padding: 8px 10px;
             }
         }
     </style>
@@ -181,6 +221,44 @@
                 <h2>Check Out My Tweets</h2>
                 <p>I occasionally share thoughts and updates on Twitter. Feel free to check out my latest tweets!</p>
                 <a href="tweets.html" class="btn">View My Tweets</a>
+            </div>
+            
+            <!-- New Learners Table Section -->
+            <h3>Our Learning Community</h3>
+            <p>Here are some of the learners who are part of our community:</p>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>25</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>Emily</td>
+                            <td>28</td>
+                            <td>Canada</td>
+                        </tr>
+                        <tr>
+                            <td>Michael</td>
+                            <td>32</td>
+                            <td>Australia</td>
+                        </tr>
+                        <tr>
+                            <td>Sophia</td>
+                            <td>21</td>
+                            <td>UK</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </article>
         
